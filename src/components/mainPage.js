@@ -1,5 +1,6 @@
-import React, { useState, useCallback, useEffect } from 'react';
-import { Row, Button, Col, Select, Space } from 'antd';
+import React, { useState, useEffect } from 'react';
+import { Row, Col, Select, Space } from 'antd';
+import '../App.css'
 
 const { Option } = Select;
 
@@ -72,8 +73,6 @@ export default function MainPage() {
   const [allLevels, setallLevels] = useState([]);
   const [selectedLevel, setselectedLevel] = useState(null);
   const [fee, setFee] = useState(null);
-
-
 
   const fetchNationality = () => {
     const selectedNationality = data[feeType];
@@ -149,17 +148,12 @@ export default function MainPage() {
     }
   },[selectedCourse, selectedLevel]);
 
-
-
-
-
   return (
     <div >
-    <Row>
-    <Space>
-      <Col>
+    <Row className='row'>
+
+      <Col className='column1'>
         <Select
-          style={{ width: 150 }}
           value={feeType}
           placeholder='select fee type'
           onChange={(e) => setfeeType(e)}>
@@ -168,9 +162,8 @@ export default function MainPage() {
         </Select>
       </Col>
 
-      <Col>
+      <Col className='column2'>
         <Select
-          style={{ width: 150 }}
           value={selectedNationality}
           placeholder='select Nationality'
           onChange={(e) => setselectedNationality(e)}>
@@ -184,9 +177,8 @@ export default function MainPage() {
         </Select>
       </Col>
 
-      <Col>
+      <Col className='column3'>
         <Select
-          style={{ width: 150 }}
           value={selectedCourse}
           placeholder='select Course'
           onChange={(e) => setselectedCourse(e)}>
@@ -200,9 +192,8 @@ export default function MainPage() {
         </Select>
       </Col>
 
-      <Col>
+      <Col className='column4'>
         <Select
-          style={{ width: 150 }}
           value={selectedLevel}
           placeholder='select Level'
           onChange={(e) => setselectedLevel(e)}>
@@ -216,7 +207,7 @@ export default function MainPage() {
         </Select>
       </Col>
 
-    </Space>
+
     </Row>
 
     <br/>

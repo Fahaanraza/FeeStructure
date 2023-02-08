@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Row, Button, Col } from 'antd';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Row, Col } from 'antd';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import MainPage from "./components/mainPage";
