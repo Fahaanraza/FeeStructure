@@ -7,7 +7,7 @@ React framework for the Frontend part.
 Javascript.
 Provided Json for the data(check src/componenets/mainpage.js).
 
-<!-- Steps to Check this app -->
+# Steps to Check this app 
 
 1. clone this repo or download.
 2. open terminal and move to the project folder.
